@@ -1,0 +1,30 @@
+0.00.004.881 I srv  llama_server: initializing ...
+0.00.012.507 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.015.416 W srv  server_setup: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)
+0.00.018.119 I srv    load_model: loading model '/home/arduino/models/Qwen_Qwen3.5-0.8B-Q8_0.gguf'
+0.03.654.054 W model has unused tensor blk.24.attn_norm.weight (size = 4096 bytes) -- ignoring
+0.03.654.098 W model has unused tensor blk.24.post_attention_norm.weight (size = 4096 bytes) -- ignoring
+0.03.654.156 W model has unused tensor blk.24.attn_q.weight (size = 4456448 bytes) -- ignoring
+0.03.654.175 W model has unused tensor blk.24.attn_k.weight (size = 557056 bytes) -- ignoring
+0.03.654.196 W model has unused tensor blk.24.attn_v.weight (size = 557056 bytes) -- ignoring
+0.03.654.267 W model has unused tensor blk.24.attn_output.weight (size = 2228224 bytes) -- ignoring
+0.03.654.293 W model has unused tensor blk.24.attn_q_norm.weight (size = 1024 bytes) -- ignoring
+0.03.654.318 W model has unused tensor blk.24.attn_k_norm.weight (size = 1024 bytes) -- ignoring
+0.03.654.344 W model has unused tensor blk.24.ffn_gate.weight (size = 3899392 bytes) -- ignoring
+0.03.654.367 W model has unused tensor blk.24.ffn_down.weight (size = 3899392 bytes) -- ignoring
+0.03.654.391 W model has unused tensor blk.24.ffn_up.weight (size = 3899392 bytes) -- ignoring
+0.03.654.421 W model has unused tensor blk.24.nextn.eh_proj.weight (size = 2228224 bytes) -- ignoring
+0.03.654.448 W model has unused tensor blk.24.nextn.enorm.weight (size = 4096 bytes) -- ignoring
+0.03.654.475 W model has unused tensor blk.24.nextn.hnorm.weight (size = 4096 bytes) -- ignoring
+0.03.654.543 W model has unused tensor blk.24.nextn.shared_head_norm.weight (size = 4096 bytes) -- ignoring
+0.03.879.807 I cmn          init: llama threadpool init, n_threads = 4
+0.04.552.975 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 4096, kv_unified = 'false'
+0.04.553.141 W srv          init: --cache-idle-slots requires --cache-ram, disabling
+0.04.578.161 I srv  server_run_i: model loaded
+0.04.578.191 I srv  server_on_li: listening on http://127.0.0.1:8091
+0.06.844.381 I slot load_slot_ch: id  0 | task -1 | restored 3 context checkpoint(s) from '/home/arduino/slots/solve.bin'
+0.06.898.514 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.760 (> 0.100 thold), f_keep = 0.806
+0.06.898.758 I slot launch_slot_: id  0 | task 1 | processing task, is_child = 0
+0.11.901.853 W srv          stop: cancel task, id_task = 1
+0.17.403.418 I slot      release: id  0 | task 1 | stop processing: n_tokens = 1364, truncated = 0
+1.33.464.344 I srv    operator(): operator(): cleaning up before exit...

@@ -1,0 +1,103 @@
+0.00.004.551 I srv  llama_server: initializing ...
+0.00.011.371 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.013.666 W srv  server_setup: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)
+0.00.016.065 I srv    load_model: loading model '/home/arduino/models/Qwen_Qwen3.5-0.8B-Q8_0.gguf'
+0.03.601.543 W model has unused tensor blk.24.attn_norm.weight (size = 4096 bytes) -- ignoring
+0.03.601.593 W model has unused tensor blk.24.post_attention_norm.weight (size = 4096 bytes) -- ignoring
+0.03.601.651 W model has unused tensor blk.24.attn_q.weight (size = 4456448 bytes) -- ignoring
+0.03.601.670 W model has unused tensor blk.24.attn_k.weight (size = 557056 bytes) -- ignoring
+0.03.601.691 W model has unused tensor blk.24.attn_v.weight (size = 557056 bytes) -- ignoring
+0.03.601.761 W model has unused tensor blk.24.attn_output.weight (size = 2228224 bytes) -- ignoring
+0.03.601.783 W model has unused tensor blk.24.attn_q_norm.weight (size = 1024 bytes) -- ignoring
+0.03.601.804 W model has unused tensor blk.24.attn_k_norm.weight (size = 1024 bytes) -- ignoring
+0.03.601.843 W model has unused tensor blk.24.ffn_gate.weight (size = 3899392 bytes) -- ignoring
+0.03.601.863 W model has unused tensor blk.24.ffn_down.weight (size = 3899392 bytes) -- ignoring
+0.03.601.891 W model has unused tensor blk.24.ffn_up.weight (size = 3899392 bytes) -- ignoring
+0.03.601.918 W model has unused tensor blk.24.nextn.eh_proj.weight (size = 2228224 bytes) -- ignoring
+0.03.601.945 W model has unused tensor blk.24.nextn.enorm.weight (size = 4096 bytes) -- ignoring
+0.03.601.971 W model has unused tensor blk.24.nextn.hnorm.weight (size = 4096 bytes) -- ignoring
+0.03.602.039 W model has unused tensor blk.24.nextn.shared_head_norm.weight (size = 4096 bytes) -- ignoring
+0.03.819.565 I cmn          init: llama threadpool init, n_threads = 4
+0.04.420.089 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 4096, kv_unified = 'false'
+0.04.420.251 W srv          init: --cache-idle-slots requires --cache-ram, disabling
+0.04.444.311 I srv  server_run_i: model loaded
+0.04.444.340 I srv  server_on_li: listening on http://127.0.0.1:8091
+0.11.740.774 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 0, t_last = -1
+0.11.741.215 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+2.05.206.796 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   1258, progress = 0.71, t = 113.47 s / 11.09 tokens per second
+2.54.883.539 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   1761, progress = 0.99, t = 163.14 s / 10.79 tokens per second
+2.56.160.429 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   1770, progress = 1.00, t = 164.42 s / 10.77 tokens per second
+2.56.847.254 I slot print_timing: id  0 | task 0 | prompt eval time =  165105.90 ms /  1774 tokens (   93.07 ms per token,    10.74 tokens per second)
+2.56.847.425 I slot print_timing: id  0 | task 0 |        eval time =       0.00 ms /     1 tokens (    0.00 ms per token,     0.00 tokens per second)
+2.56.847.434 I slot print_timing: id  0 | task 0 |       total time =  165105.90 ms /  1775 tokens
+2.56.847.444 I slot print_timing: id  0 | task 0 |    graphs reused =          1
+2.56.847.446 I slot print_timing: id  0 | task 0 |   graph reallocs =          0    /     0        (same size) / (changed size)
+2.56.848.762 I slot      release: id  0 | task 0 | stop processing: n_tokens = 1774, truncated = 0
+2.57.231.753 I slot save_slot_ch: id  0 | task -1 | appended 3 context checkpoint(s) (57.798 MiB) to '/home/arduino/slots/solve.bin'
+2.57.306.012 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.954 (> 0.100 thold), f_keep = 0.994
+2.57.306.401 I slot launch_slot_: id  0 | task 6 | processing task, is_child = 0
+3.07.400.372 I slot print_timing: id  0 | task 6 | prompt processing, n_tokens =     85, progress = 1.00, t =  10.09 s / 8.42 tokens per second
+3.22.425.304 I slot print_timing: id  0 | task 6 | prompt eval time =   10807.86 ms /    89 tokens (  121.44 ms per token,     8.23 tokens per second)
+3.22.425.333 I slot print_timing: id  0 | task 6 |        eval time =   14310.95 ms /    63 tokens (  230.82 ms per token,     4.33 tokens per second)
+3.22.425.336 I slot print_timing: id  0 | task 6 |       total time =   25118.81 ms /   152 tokens
+3.22.425.339 I slot print_timing: id  0 | task 6 |    graphs reused =         62
+3.22.425.341 I slot print_timing: id  0 | task 6 |   graph reallocs =          0    /     0        (same size) / (changed size)
+3.22.425.821 I slot      release: id  0 | task 6 | stop processing: n_tokens = 1912, truncated = 0
+3.22.521.589 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.936 (> 0.100 thold), f_keep = 0.964
+3.22.521.802 I slot launch_slot_: id  0 | task 71 | processing task, is_child = 0
+3.40.177.664 I slot print_timing: id  0 | task 71 | prompt processing, n_tokens =    149, progress = 0.97, t =  17.66 s / 8.44 tokens per second
+3.47.406.177 I slot print_timing: id  0 | task 71 | prompt processing, n_tokens =    205, progress = 1.00, t =  24.88 s / 8.24 tokens per second
+3.57.572.225 I slot print_timing: id  0 | task 71 | prompt eval time =   25640.72 ms /   209 tokens (  122.68 ms per token,     8.15 tokens per second)
+3.57.572.253 I slot print_timing: id  0 | task 71 |        eval time =    9409.63 ms /    42 tokens (  229.50 ms per token,     4.36 tokens per second)
+3.57.572.256 I slot print_timing: id  0 | task 71 |       total time =   35050.36 ms /   251 tokens
+3.57.572.258 I slot print_timing: id  0 | task 71 |    graphs reused =        102
+3.57.572.260 I slot print_timing: id  0 | task 71 |   graph reallocs =          0    /     0        (same size) / (changed size)
+3.57.572.723 I slot      release: id  0 | task 71 | stop processing: n_tokens = 2011, truncated = 0
+3.57.619.323 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 2011, t_last = 11479941711
+3.57.619.571 I slot launch_slot_: id  0 | task 116 | processing task, is_child = 0
+4.03.040.200 I slot print_timing: id  0 | task 116 | prompt processing, n_tokens =     63, progress = 0.41, t =   5.42 s / 11.62 tokens per second
+4.10.673.846 I slot print_timing: id  0 | task 116 | prompt processing, n_tokens =    149, progress = 0.97, t =  13.05 s / 11.41 tokens per second
+4.12.377.414 I slot print_timing: id  0 | task 116 | prompt eval time =   13519.99 ms /   153 tokens (   88.37 ms per token,    11.32 tokens per second)
+4.12.377.442 I slot print_timing: id  0 | task 116 |        eval time =    1237.78 ms /     8 tokens (  176.83 ms per token,     5.66 tokens per second)
+4.12.377.445 I slot print_timing: id  0 | task 116 |       total time =   14757.77 ms /   161 tokens
+4.12.377.465 I slot print_timing: id  0 | task 116 |    graphs reused =        108
+4.12.377.467 I slot print_timing: id  0 | task 116 |   graph reallocs =          0    /     0        (same size) / (changed size)
+4.12.377.581 I slot      release: id  0 | task 116 | stop processing: n_tokens = 160, truncated = 0
+4.12.461.050 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 160, t_last = 11494746568
+4.12.461.287 I slot launch_slot_: id  0 | task 127 | processing task, is_child = 0
+6.13.931.449 I slot print_timing: id  0 | task 127 | prompt processing, n_tokens =   1329, progress = 0.72, t = 121.47 s / 10.94 tokens per second
+6.57.289.155 I slot print_timing: id  0 | task 127 | prompt processing, n_tokens =   1761, progress = 0.95, t = 164.83 s / 10.68 tokens per second
+7.06.009.974 I slot print_timing: id  0 | task 127 | prompt processing, n_tokens =   1841, progress = 1.00, t = 173.55 s / 10.61 tokens per second
+7.23.945.313 I slot print_timing: id  0 | task 127 | prompt eval time =  174322.88 ms /  1845 tokens (   94.48 ms per token,    10.58 tokens per second)
+7.23.945.340 I slot print_timing: id  0 | task 127 |        eval time =   17161.08 ms /    75 tokens (  231.91 ms per token,     4.31 tokens per second)
+7.23.945.343 I slot print_timing: id  0 | task 127 |       total time =  191483.95 ms /  1920 tokens
+7.23.945.346 I slot print_timing: id  0 | task 127 |    graphs reused =        181
+7.23.945.349 I slot print_timing: id  0 | task 127 |   graph reallocs =          0    /     0        (same size) / (changed size)
+7.23.946.719 I slot      release: id  0 | task 127 | stop processing: n_tokens = 1919, truncated = 0
+7.24.069.363 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 1919, t_last = 11686315716
+7.24.069.591 I slot launch_slot_: id  0 | task 206 | processing task, is_child = 0
+7.29.585.107 I slot print_timing: id  0 | task 206 | prompt processing, n_tokens =     63, progress = 0.41, t =   5.52 s / 11.42 tokens per second
+7.37.141.906 I slot print_timing: id  0 | task 206 | prompt processing, n_tokens =    149, progress = 0.97, t =  13.07 s / 11.40 tokens per second
+7.38.936.155 I slot print_timing: id  0 | task 206 | prompt eval time =   13559.08 ms /   153 tokens (   88.62 ms per token,    11.28 tokens per second)
+7.38.936.184 I slot print_timing: id  0 | task 206 |        eval time =    1307.42 ms /     8 tokens (  186.77 ms per token,     5.35 tokens per second)
+7.38.936.187 I slot print_timing: id  0 | task 206 |       total time =   14866.49 ms /   161 tokens
+7.38.936.190 I slot print_timing: id  0 | task 206 |    graphs reused =        187
+7.38.936.192 I slot print_timing: id  0 | task 206 |   graph reallocs =          0    /     0        (same size) / (changed size)
+7.38.936.314 I slot      release: id  0 | task 206 | stop processing: n_tokens = 160, truncated = 0
+7.39.129.420 I slot load_slot_ch: id  0 | task -1 | restored 3 context checkpoint(s) from '/home/arduino/slots/solve.bin'
+7.39.219.601 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.952 (> 0.100 thold), f_keep = 0.994
+7.39.219.967 I slot launch_slot_: id  0 | task 218 | processing task, is_child = 0
+7.49.415.191 I slot print_timing: id  0 | task 218 | prompt processing, n_tokens =     87, progress = 1.00, t =  10.20 s / 8.53 tokens per second
+8.12.777.946 I slot print_timing: id  0 | task 218 | n_gen =    100, tg =   4.36 t/s, tg_3s =   4.40 t/s
+8.13.866.992 I slot print_timing: id  0 | task 218 | prompt eval time =   10838.03 ms /    91 tokens (  119.10 ms per token,     8.40 tokens per second)
+8.13.867.105 I slot print_timing: id  0 | task 218 |        eval time =   23808.91 ms /   105 tokens (  228.93 ms per token,     4.37 tokens per second)
+8.13.867.114 I slot print_timing: id  0 | task 218 |       total time =   34646.94 ms /   196 tokens
+8.13.867.117 I slot print_timing: id  0 | task 218 |    graphs reused =        290
+8.13.867.119 I slot print_timing: id  0 | task 218 |   graph reallocs =          0    /     0        (same size) / (changed size)
+8.13.867.537 I slot      release: id  0 | task 218 | stop processing: n_tokens = 1956, truncated = 0
+8.23.146.154 I slot load_slot_ch: id  0 | task -1 | restored 3 context checkpoint(s) from '/home/arduino/slots/solve.bin'
+8.23.274.214 I slot load_slot_ch: id  0 | task -1 | restored 3 context checkpoint(s) from '/home/arduino/slots/solve.bin'
+8.23.398.648 I slot load_slot_ch: id  0 | task -1 | restored 3 context checkpoint(s) from '/home/arduino/slots/solve.bin'
+8.23.660.887 I slot save_slot_ch: id  0 | task -1 | appended 3 context checkpoint(s) (57.798 MiB) to '/home/arduino/slots/prova_p.bin'
+8.24.096.667 I slot save_slot_ch: id  0 | task -1 | appended 3 context checkpoint(s) (57.798 MiB) to '/home/arduino/slots/prova_p.bin'
+10.07.021.508 I srv    operator(): operator(): cleaning up before exit...

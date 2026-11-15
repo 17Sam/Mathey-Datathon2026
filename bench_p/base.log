@@ -1,0 +1,17 @@
+02:13:55 START Q8_0 t=4 avail=2690 temp=45400 
+02:15:29 END   Q8_0 t=4 rc=0 temp=57300 8081_busy_at_end=no
+02:15:29 START Q8_0 t=3 avail=2681 temp=56400 
+02:17:27 END   Q8_0 t=3 rc=0 temp=56400 8081_busy_at_end=no
+02:17:27 START Q6_K t=4 avail=2690 temp=56700 
+02:19:19 END   Q6_K t=4 rc=0 temp=57300 8081_busy_at_end=no
+02:19:19 START Q6_K t=3 avail=2686 temp=56400 
+02:21:42 END   Q6_K t=3 rc=0 temp=55100 8081_busy_at_end=no
+02:21:42 START Q5_K_M t=4 avail=2685 temp=55100 
+02:23:26 END   Q5_K_M t=4 rc=0 temp=58300 8081_busy_at_end=no
+02:23:26 START Q5_K_M t=3 avail=2755 temp=57600 
+02:25:42 END   Q5_K_M t=3 rc=0 temp=55100 8081_busy_at_end=no
+02:25:42 START Q4_K_M t=4 avail=2758 temp=55100 
+02:27:24 END   Q4_K_M t=4 rc=0 temp=57300 8081_busy_at_end=no
+02:27:24 START Q4_K_M t=3 avail=2788 temp=57600 
+02:29:33 END   Q4_K_M t=3 rc=0 temp=54800 8081_busy_at_end=no
+02:29:33 DONE

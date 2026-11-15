@@ -1,0 +1,7 @@
+:HL["/_next/static/chunks/3khx_u2ytcx6d.css","style"]
+:HL["/_next/static/media/GeistMono_Variable.p.2vtemngyy8z-u.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/Geist_Variable-s.p.43azbxi7zpibd.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/static/landing-page/bg-hero-1.jpg","image"]
+:HL["/static/landing-page/bg-light.avif","image"]
+1:[["children",{"s":"__PAGE__","h":160}]]
+0:{"b":"urYfb6GDuf8N37dOajtGU","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
