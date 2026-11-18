@@ -1,0 +1,21 @@
+id,language,level,gold,mathey,correct,label,letter_mode,seconds,reasoning
+lvl-0_2016_8,eng,0,19,11,False,C,D,17.7,"To ensure we have at least one black ball, we must consider the worst-case scenario where we take out as many non-black balls as possible."
+lvl-2_2016_6,eng,2,3,16,False,B,D,17.4,The total distance covered by Antoni's airplane is 16 meters.
+lvl-3_2021_15,eng,3,13,20,False,C,D,19.4,The sum of the number of coins and diamonds that Barbaroja has is 20.
+lvl-4_2011_27,eng,4,6,4,False,D,D,13.6,The maximum number of points that can belong to more than one circle is 4.
+lvl-4_2020_26,eng,4,8,26,False,E,A,15.6,"The total area of the ribbon is 26, so the side length of the square is $\sqrt{26}$."
+lvl-5_2011_8,eng,5,5,12,False,A,D,14.3,Felix catches 12 fish on the third day.
+lvl-5_2017_26,eng,5,2,1,False,E,D,17.4,The number in the 2017th position of this list is 1.
+lvl-5_2023_30,eng,5,28,1,False,D,D,22.6,"To make a bracelet with exactly three black beads and six white beads where no two black beads are adjacent, we need to calculate the number of ways to arrange the black beads and white beads such no ."
+lvl-6_2015_13,eng,6,5,5,True,A,D,16.5,Trimi has 5 ears.
+lvl-7_2007_22,eng,7,30,22,False,A,D,12.5,The surface of the sphere has 22 points with integer coordinates.
+lvl-7_2015_26,eng,7,5,256,False,A,A,12.7,The sum of exactly nine different powers of 2 can be represented as 256.
+lvl-1_2018_18,cat,1,9,13,False,B,D,16.3,El drac tenia 13 caps al principi.
+lvl-2_2024_30,cat,2,8,4,False,D,A,18.4,"El nombre original era 302, i el nou és 304, per tant la xifra de Ferran és 4."
+lvl-4_2009_17,cat,4,12,16,False,B,A,13.3,El volume total de la caixa és de 480.
+lvl-4_2017_26,cat,4,16,26,False,E,D,18.7,26 òmits de cordill.
+lvl-5_2007_2,cat,5,22,10,False,A,D,22.1,"20 m de llarg és la longitud total del camí, i amb 2 m de distància entre cada dos rosers, es podran plantar 10 rosers."
+lvl-5_2016_19,cat,5,22,10,False,A,A,15.7,"La suma dels vèrtexs, aristes i cares d'una piràmide és 10."
+lvl-5_2022_23,cat,5,380,100,False,D,D,21.9,El resultat més gran és 100 punts i el més petit és 0 punts.
+lvl-6_2012_7,cat,6,12,24,False,B,D,14.4,El perímetre del triangle KLM és 24 cm.
+lvl-6_2021_23,cat,6,10,20,False,C,D,16.7,"El nombre més petit és 1999, per tant la suma de les xifres és 20."

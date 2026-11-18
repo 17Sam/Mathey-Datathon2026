@@ -1,0 +1,5 @@
+time,name,commit,input,languages,n,rag_k,accuracy,mean_s,worst_s,over_limit
+20261114-162638,rag1,d6e3f1b,data/val.jsonl,all,50,1,20.0,25.4,57.1,0
+20261115-115745,baseline,3724023,data/train.jsonl,all,10,0,30.0,0.0,0.0,0
+20261115-115753,baseline,3724023,data/train.jsonl,all,100,0,26.0,0.0,0.0,0
+20261115-115805,baseline,3724023,data/train.jsonl,all,800,0,27.9,0.0,0.0,0
